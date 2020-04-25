@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/therealoto/therealoto.github.io#readme",
   "dependencies": {
-    "dir": "^0.1.2",
-    "lodash": "^4.17.10"
+    "dir": "^0.1.2"
   }
 }
