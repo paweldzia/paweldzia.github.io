@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Broservice</title>
+    <script src="https://kit.fontawesome.com/cb4de9f874.js" crossorigin="anonymous"></script>
+</head>
+
+<link rel="icon" type="image/png" href="./assets/img/tabicon.png">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+
+<body onload="WeekdayNames()">
+<script>
+    function WeekdayNames() {
+        var now = new Date();
+        var days = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+        var currentDay1 = days[now.getDay()];
+        var currentDay2 = days[now.getDay() + 1];
+        var currentDay3 = days[now.getDay() + 2];
+        var currentDay4 = days[now.getDay() + 3];
+        document.getElementById("currentDay").innerHTML = "<b>" + currentDay1 + "</b>";
+        document.getElementById("currentDayPlusOne").innerHTML = currentDay2;
+        document.getElementById("currentDayPlusTwo").innerHTML = currentDay3;
+        document.getElementById("currentDayPlusThree").innerHTML = currentDay4;
+    }
+</script>
+    <div class="container-fluid" style="height: auto; text-align: center; background-position-y: 100px; background-image: url('./assets/img/background_img_header.jpg');">
+
+        <div class="row fixed-top" style="display: flex; align-items: center; justify-content: center; background-color: lightgrey; height: 100px; width: auto; margin-left: 0px; margin-top: 0px; margin-right: 0px">
+            <div style="width: 20%; padding: 7px"><h2>The Broservice</h2></div>
+            <div style="width: 60%"></div>
+            <div style="width: 20%; font-size: 50px">
+                <a href="https://www.facebook.com/pawel.dziadzia/" rel="tooltip" title data-placement="bottom" target="_blank" data-original-title="Facebook - so lange der Vorrat reicht!">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="row" style="height: 100px"></div>
+
+        <div class="row" style="height: 400px; margin: 0px; align-content: center">
+            <div style="width: 100%; flex-direction: column; float: left">
+                <h1><b>Everybody needs a bro.</b></h1>
+                <h3>Even you, Jonas.</h3>
+            </div>
+        </div>
+
+        <div class="row" style="opacity: 95%">
+            <div style="background-color: lightgrey; width: 80%; margin-left: 10%; border-radius: 10px; padding: 30px">
+                <h3><b>Wochentage</b></h3>
+                Wochentage können schwierig sein. Wir respektieren das.<br>
+                Deshalb helfen wir gerne aus mit dem heutigen Tag sowie den drei als nächstes folgenden Tagen:<br><br>
+                <ls>
+                    <li id="currentDay"></li>
+                    <li id="currentDayPlusOne"></li>
+                    <li id="currentDayPlusTwo"></li>
+                    <li id="currentDayPlusThree"></li>
+                </ls><br>
+                Stets eine Freude.<br>
+            </div>
+        </div>
+
+        <div class="row" style="height: 100px;"></div>
+
+    </div>
+</body>
+
+</html>
