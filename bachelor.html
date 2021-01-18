@@ -70,7 +70,13 @@
             var options = {
                 title: 'Road to bachelor',
                 hAxis: {title: 'Week',  titleTextStyle: {color: '#333'}},
-                vAxis: {minValue: 0}
+                vAxis: {minValue: 0},
+                backgroundColor: 'white',
+                animation: {
+                    startup: true,
+                    duration: 1000,
+                    easing: 'out'
+                }
             };
 
             var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
@@ -110,7 +116,7 @@
 
 
         <div class="row" style="opacity: 95%">
-            <div id="chart_div" style="background-color: lightgrey; width: 80%; height: 500px; margin-left: 10%; border-radius: 10px; padding: 30px">
+            <div id="chart_div" style="background-color: lightgrey; width: 80%; height: 600px; margin-left: 10%; border-radius: 10px; padding: 30px">
 
             </div>
         </div>
