@@ -13,35 +13,8 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="style.css" rel="stylesheet">
 
-<body onload="typeWriter()">
-<script>
-    function typeWriter() {
-        var i = 0;
-        var txt = 'Even you.';
-        var txt2 = 'Simone';
-        var txt3 = 'you.'
-        var speed = 70;
+<body>
 
-        function typeWriter2() {
-            if (i < txt.length) {
-                document.getElementById("name_tag").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter2, speed);
-            };
-
-            // for (i = 0; i < 6; i++) {
-            //     var text_inbetween = document.getElementById("name_tag").innerHTML
-            //     var text_new = document.getElementById("name_tag").innerText.substring(0, text_inbetween.length()-1)
-            //     document.getElementById("name_tag").innerText = text_new
-            // }
-
-
-
-        };
-        typeWriter2();
-
-    }
-</script>
     <div class="container-fluid" style="height: auto; text-align: center; background-position-y: 100px; background-image: url('./assets/img/background_img_header.jpg');">
 
         <div class="row fixed-top" style="display: flex; align-items: center; justify-content: center; background-color: lightgrey; height: 100px; width: auto; margin-left: 0px; margin-top: 0px; margin-right: 0px">
@@ -59,7 +32,7 @@
         <div class="row" style="height: 400px; margin: 0px; align-content: center">
             <div style="width: 100%; flex-direction: column; float: left">
                 <h1><b>Everybody needs a bro.</b></h1>
-                <h3 id="name_tag"></h3>
+                <h3>Even you.</h3>
             </div>
         </div>
 
