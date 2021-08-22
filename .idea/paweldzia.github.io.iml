@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="TestingShpock" />
+    <orderEntry type="module" module-name="LeaveNowApp" />
   </component>
 </module>
