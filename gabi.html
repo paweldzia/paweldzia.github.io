@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ein Totoro-inspirierter Geburtstagsgutschein für Gabi: My Neighbour Totoro als Musical in London."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Für Gabi</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23f1b64b'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%2320322b'%3EG%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./gabi/styles.css" />
+    <script src="./gabi/script.js" defer></script>
+  </head>
+  <body>
+    <div class="scene" aria-hidden="true">
+      <div class="sky-glow"></div>
+      <div class="canopy canopy-back"></div>
+      <div class="canopy canopy-front"></div>
+      <div class="rain rain-one"></div>
+      <div class="rain rain-two"></div>
+      <div class="hill hill-back"></div>
+      <div class="hill hill-front"></div>
+      <div class="soot-field" data-soot-field></div>
+      <div class="catbus-lane">
+        <div class="catbus">
+          <span class="catbus-ear ear-left"></span>
+          <span class="catbus-ear ear-right"></span>
+          <span class="catbus-face">
+            <i></i>
+            <i></i>
+          </span>
+          <span class="catbus-window"></span>
+          <span class="catbus-window"></span>
+          <span class="catbus-window"></span>
+          <span class="catbus-tail"></span>
+          <span class="catbus-leg leg-one"></span>
+          <span class="catbus-leg leg-two"></span>
+          <span class="catbus-leg leg-three"></span>
+          <span class="catbus-leg leg-four"></span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Zurück nach oben">
+        <span class="brand-mark">G</span>
+        <span>Gabis Waldpost</span>
+      </a>
+      <nav class="nav-links" aria-label="Seitennavigation">
+        <a href="#gutschein">Gutschein</a>
+        <a href="#trailer">Trailer</a>
+        <a href="#reise">London</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-stack" id="gutschein">
+          <div class="hero-copy poem-card">
+            <h1 id="hero-title">Wenn eine eine Reise tut…</h1>
+            <div class="poem-lines">
+              <p>
+                ..muss sie packen viele Sachen,<br />
+                Um den Trip gut mitzumachen:<br />
+                Zwischen Regenschirm und Sonnenbrille,<br />
+                Reisepass und Ubahnticket<br />
+                Gutem Schuhwerk und luftigem Kleid,<br />
+                Mammin, mach dich schnell bereit!
+              </p>
+              <p>
+                Wir gehen ins Theater für ein ganz besonderes Stück,<br />
+                Denn wir haben das Glück,<br />
+                Unseren tollsten Nachbarn zu sehen<br />
+                Für den wir sogar über den Ärmelkanal gehen!
+              </p>
+              <p class="poem-question">Weißt du schon, worum es geht?</p>
+            </div>
+            <div class="hero-actions">
+              <a class="button primary" href="#trailer">Trailer ansehen</a>
+              <button class="button secondary" type="button" data-open-voucher>
+                Gutschein öffnen
+              </button>
+            </div>
+          </div>
+
+          <div class="voucher-panel" data-voucher-panel hidden>
+            <aside class="ticket" aria-label="Gutschein">
+              <div class="ticket-stub">
+                <span>Voucher</span>
+                <span>London</span>
+              </div>
+              <div class="ticket-main">
+                <p class="ticket-label">Geburtstagsgutschein</p>
+                <h2>My Neighbour Totoro</h2>
+                <p class="ticket-subtitle">Das Musical in London</p>
+                <dl class="ticket-details">
+                  <div>
+                    <dt>Für</dt>
+                    <dd>Gabi</dd>
+                  </div>
+                  <div>
+                    <dt>Wann</dt>
+                    <dd>Später dieses Jahr</dd>
+                  </div>
+                  <div>
+                    <dt>Wo</dt>
+                    <dd>London</dd>
+                  </div>
+                  <div>
+                    <dt>Status</dt>
+                    <dd>Sehr echt</dd>
+                  </div>
+                </dl>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="trailer-section" id="trailer" aria-labelledby="trailer-title">
+        <div class="section-heading">
+          <p class="eyebrow">Erstmal reinschauen</p>
+          <h2 id="trailer-title">Der Trailer zum Musical</h2>
+          <p>
+            Falls der Waldbus noch nicht alles verraten hat: Das hier ist die
+            Vorschau auf den Abend, für den der Gutschein gedacht ist.
+          </p>
+        </div>
+        <div class="video-frame" data-youtube-player data-video-id="XDG4g9Cpjt8">
+          <button
+            class="trailer-card"
+            type="button"
+            data-load-youtube
+            aria-label="Trailer zu My Neighbour Totoro hier auf der Seite abspielen"
+          >
+            <img
+              src="https://img.youtube.com/vi/XDG4g9Cpjt8/hqdefault.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <span class="trailer-overlay">
+              <span class="play-mark" aria-hidden="true"></span>
+              <span>Trailer hier abspielen</span>
+            </span>
+          </button>
+          <p class="video-note" data-youtube-note hidden>
+            Der Player braucht eine normale Website-Adresse. Wenn du die Datei
+            direkt geöffnet hast, starte den lokalen Server aus der README.
+          </p>
+        </div>
+      </section>
+
+      <section class="details-section" id="reise" aria-labelledby="details-title">
+        <div class="section-heading">
+          <p class="eyebrow">Was im Umschlag steckt</p>
+          <h2 id="details-title">Ein Theaterabend, kein Platzhalter.</h2>
+        </div>
+        <div class="detail-grid">
+          <article class="detail-card">
+            <span class="detail-icon">01</span>
+            <h3>Ein Gutschein</h3>
+            <p>
+              Dieser Link ist die schönere Version von: Du bekommst ein Ticket
+              für <strong>My Neighbour Totoro</strong>.
+            </p>
+          </article>
+          <article class="detail-card">
+            <span class="detail-icon">02</span>
+            <h3>Ein Theaterabend</h3>
+            <p>
+              Wir fahren später dieses Jahr zusammen nach London und machen den
+              Musicalbesuch zu einem kleinen Ausflug.
+            </p>
+          </article>
+          <article class="detail-card">
+            <span class="detail-icon">03</span>
+            <h3>Vorfreude ab jetzt</h3>
+            <p>
+              Trailer anschauen, Kalendergedanken sammeln und schon mal
+              innerlich in den Katzenbus einsteigen.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="message-section" aria-labelledby="message-title">
+        <div class="message-paper">
+          <p class="eyebrow">Eine kleine Notiz</p>
+          <h2 id="message-title">Liebe Gabi,</h2>
+          <p>
+            ich wollte dir nicht einfach nur sagen, dass wir ins Musical gehen.
+            Ich wollte, dass der Moment selbst schon ein bisschen nach Wald,
+            Regen, Musik und Vorfreude aussieht.
+          </p>
+          <p>
+            Der echte Gutschein ist: Wir erleben diesen Abend gemeinsam. Und bis
+            dahin gehört dir diese kleine Website als Vorfreude-Verstärker.
+          </p>
+          <p class="signature">Alles Liebe und Happy Birthday.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Für Gabi</span>
+      <span>mit Rußmännchen, Katzenbus und London-Vorfreude</span>
+    </footer>
+  </body>
+</html>
